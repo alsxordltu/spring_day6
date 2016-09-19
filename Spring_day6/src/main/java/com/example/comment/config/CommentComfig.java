@@ -13,10 +13,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan("com.example.comment.repo")
+@ComponentScan({"com.example.comment.repo","com.example.comment.service"})
 @PropertySource("classpath:/config/dbconfig.properties")
+@EnableTransactionManagement
 public class CommentComfig {
 	
 	private static Logger logger = LoggerFactory.getLogger(CommentComfig.class);
@@ -56,6 +60,12 @@ public class CommentComfig {
 	public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactoryBean sfb) throws Exception{
 		SqlSessionTemplate template = new SqlSessionTemplate(sfb.getObject());
 		return template;
+	}
+	
+	@Bean
+	public PlatformTransactionManager transactionManager(DataSource ds){
+		PlatformTransactionManager tm = new DataSourceTransactionManager(ds);
+		return tm;
 	}
 	
 }

@@ -1,3 +1,7 @@
+drop table tcomment;
+drop table tuser;
+drop sequence SEQ_COMMENT;
+
 create table Tuser
 (user_id varchar2(20) primary key,
  Pass varchar2(20) not null
