@@ -80,8 +80,8 @@ $(document).ready(function () {
       <div class="menu_block">
         <nav class="">
           <ul class="sf-menu">
-            <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">ㅎㅇ(Home)</a> <strong class="hover"></strong></li>
-            <li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">ㅇㅎㅇ </a><strong class="hover"></strong></li>
+            <!-- <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">ㅎㅇ(Home)</a> <strong class="hover"></strong></li>
+             --><li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">ㅇㅎㅇ </a><strong class="hover"></strong></li>
             <li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">ㅀㅇ</a> <strong class="hover"></strong></li>
             <li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">ㅇㅅㅇㅅ</a> <strong class="hover"></strong></li>
             <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">ㅇㅂㅇ</a> <strong class="hover"></strong></li>
@@ -93,7 +93,7 @@ $(document).ready(function () {
     <div class="clear"></div>
   </div>
 </header>
-<div id="page1" class="content">
+<!-- <div id="page1" class="content">
   <div class="container_12">
     <div class="grid_12">
       <div class="slider_wrapper">
@@ -123,7 +123,7 @@ $(document).ready(function () {
       <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
     </div>
   </div>
-</div>
+</div> -->
 <div id="page2" class="content">
   <div class="container_12">
     <div class="grid_12">

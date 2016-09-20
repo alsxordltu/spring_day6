@@ -1,79 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
-
-
-
 <!DOCTYPE html>
 <html>
-<head>
-<title>Insert title here</title>
-<link rel="stylesheet" href="css/newcss.css">
-</head>
-<script>
-function win() {
-window.open("http://eschyles.mireene.com/", "", "");  //속성 지정하지 않은 기본창
-}
+<script type="text/javascript">
+ window.onload = function(){
+  document.getElementById("registPopup").style.display="none";
+  document.getElementById("bodyLayer").style.filter = "alpha(opacity=100)";
+  document.getElementById("bodyLayer").style.opacity = "1";
+ }
+ 
 
+ function showPopup(){
+  document.getElementById("registPopup").style.top = 450;
+  document.getElementById("registPopup").style.left = 300;
+  document.getElementById("test_btn").removeAttribute("href");
+  document.getElementById("test_btn").style.cursor = "Arrow";
+  document.getElementById("registPopup").style.display = "block";
+  document.getElementById("bodyLayer").style.filter = "alpha(opacity=10)";
+  document.getElementById("bodyLayer").style.opacity = "0.1";
 
-function menu_win() {
-window.open("http://eschyles.mireene.com/", "", "menubar=1");  //메뉴바 없는 팝업
-}
+  
+ }
 
-
-function full_win() {
-window.open("http://eschyles.mireene.com/", "", "fullscreen"); //풀스크린 방식
-}
-
-function channel_win() {
-window.open("http://eschyles.mireene.com/", "", "channelmode"); //채널모드
-
-}
-
-
-function status_win() { // 상태표시바 있는 팝업
-window.open("http://eschyles.mireene.com/", "", "width=400, height=300, status=1");
-}
-
-
-function popup_win1() { //크기 width400 height300 팝업창
-window.open("http://eschyles.mireene.com/", "", "width=400, height=300");
-}
-
-
-function popup_win2() { //위치 left=500, top=400 에서 열리는 팝업창
-window.open("http://eschyles.mireene.com/", "", "width=400, height=300, left=500, top=400");
-}
-
-
-function popup_win3() { //스크롤바 있는 팝업
-window.open("http://eschyles.mireene.com/", "", "width=400, height=300,  scrollbars=1");
-}
-
-
-function popup_win4() { //주소표시줄 있는 팝업
-window.open("http://eschyles.mireene.com/", "", "width=400, height=300, left=100, location=1");
-}
+ function closePopup(){
+  document.getElementById("test_btn").setAttribute("href","javascript: showPopup();");
+  document.getElementById("test_btn").style.cursor = "Pointer";
+  document.getElementById("registPopup").style.display="none";
+  document.getElementById("bodyLayer").style.filter = "alpha(opacity=100)";
+  document.getElementById("bodyLayer").style.opacity = "1";
+ }
 </script>
 
+  <div id="registPopup" style="position: relative;z-index:1;width:200;height:100; background-color: #F5F5F5;">
+  <h3>투명위에 뜨는 팝업....</h3>
+  <input type="button" onclick="closePopup();" value="닫기" />
+ </div>
 
-<body>
-<input type="button" value="속성 지정하지 않은 기본 창" onclick="win()">
-
-<input type="button" value="메뉴바 없는 팝업" onclick="menu_win()">
-
-<input type="button" value="풀스크린 팝업" onclick="full_win()">
-
-<input type="button" value="채널모드 팝업" onclick="channel_win()">
-
-<input type="button" value="상태표시바 있는 팝업" onclick="status_win()">
-
-<input type="button" value="width400 height300 팝업창" onclick="popup_win1()">
-
-<input type="button" value="위치 left=500, top=400 팝업창" onclick="popup_win2()">
-
-<input type="button" value="스크롤바 있는 팝업" onclick="popup_win3()">
-
-<input type="button" value="주소 입력 표시줄 있는 팝업" onclick="popup_win4()">
-
-<input type="button" value="우헿헤" class="defaultButton" >
-
-</body>
+ <div id="bodyLayer" style="z-index:0;position:absolute;top:0;width:227;height:27" >
+ <iframe name="imgFrame" id="imgFrame" src="http://blogfiles6.naver.net/data28/2008/2/1/181/%B1%B8%C1%F6%BC%BA102_ghkdwo412.jpg" width=600 height=900 scrolling=no frameborder=0></iframe>
+ <br />
+ <br /><a id="test_btn" href="javascript: showPopup();"><img src="http://sstatic.naver.com/search/images11/logo_naver.gif" border=0 /></a>
+ </div>
+ </html>

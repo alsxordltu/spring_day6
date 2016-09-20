@@ -11,11 +11,11 @@ header {
 body {
    font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
    color: #333333;
-   background: #FFCCFF;
+   background: #FFCCFF;/* 연핑 */ 
 }
 /* 흰 버튼 바탕 */
 .signUp { 
-   margin: 40px auto;  
+   margin: 5px auto;  
    width: 280px;
    padding: 33px 25px 29px;
    background: #FFFFFF;
@@ -24,90 +24,12 @@ body {
    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
-
-.signUp:before,
-.signUp:after {
-   content: '';
-   position: absolute;
-   bottom: 1px;
-   left: 0;
-   right: 0;
-   height: 10px;
-   background: inherit;
-   border-bottom: 1px solid #D2D2D2;
-   border-radius: 4px;
-}
-
-.signUp:after {
-   bottom: 3px;
-   border-color: #DCDCDC;
-}
-
-.signUpTitle {
-   margin: -25px -25px 25px;
-   padding: 15px 25px;
-   line-height: 35px;
-   font-size: 26px;
-   font-weight: 300;
-   color: #777;
-   text-align: center;
-   text-shadow: 0 1px rgba(255, 255, 255, 0.75);
-   background: #F7F7F7;
-}
-
-.signUpTitle:before {
-   content: '';
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: 8px;
-   background: #C4E17F;
-   border-radius: 5px 5px 0 0;
-   background-image: -webkit-linear-gradient(left, #C4E17F, #C4E17F 12.5%, #F7FDCA 12.5%, #F7FDCA 25%, #FECF71 25%, #FECF71 37.5%, #F0776C 37.5%, #F0776C 50%, #DB9DBE 50%, #db9CBE 62.5%, #C49CDE 62.5%, #C49CDE 75%, #669AE1 75%, #669AE1 87.5%, #62C2E4 87.5%, #62C2E4);
-   background-image: -moz-linear-gradient(left, #c4e17f, #C4E17F 12.5%, #F7FDCA 12.5%, #F7FDCA 25%, #FECF71 25%, #FECF71 37.5%, #F0776C 37.5%, #F0776C 50%, #DB9DBE 50%, #DB9CBE 62.5%, #C49CDE 62.5%, #C49CDE 75%, #669AE1 75%, #669AE1 87.5%, #62C2E4 87.5%, #62C2E4);
-   background-image: -o-linear-gradient(left, #C4E17F, #C4E17F 12.5%, #F7FDCC 12.5%, #F7FDCA 25%, #FECF71 25%, #FECF71 37.5%, #F0776C 37.5%, #F0776C 50%, #DB9DBE 50%, #DB9DBE 62.5%, #C49CDE 62.5%, #C49CDE 75%, #669AE1 75%, #669AE1 87.5%, #62C2E4 87.5%, #62C2E4);
-   background-image: linear-gradient(to right, #C4E17F, #C4E17F 12.5%, #F7FDCA 12.5%, #F7FDCA 25%, #FECF71 25%, #FECF71 37.5%, #F0776C 37.5%, #F0776C 50%, #DB9DBE 50%, #DB9CBE 62.5%, #c49cde 62.5%, #C49CDE 75%, #669AE1 75%, #669AE1 87.5%, #62c2e4 87.5%, #62C2E4);
-}
-
-input {
-   font-family: inherit;
-   color: inherit;
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
-}
-
-.signUpInput {
-   width: 100%;
-   height: 50px;
-   margin-bottom: 25px;
-   padding: 0 15px 2px;
-   font-size: 17px;
-   background: white;
-   border: 2px solid #EBEBEB;
-   border-radius: 4px;
-   -webkit-box-shadow: inset 0 -2px #EBEBEB;
-   box-shadow: inset 0 -2px #EBEBEB;
-}
-
-.signUpInput:focus {
-   border-color: #62C2E4;
-   outline: none;
-   -webkit-box-shadow: inset 0 -2px #62C2E4;
-   box-shadow: inset 0 -2px #62C2E4;
-}
-
-.lt-ie9 .signUpInput {
-   line-height: 48px;
-}
 /* 기본버튼핫핑 */
 .signUpButton {
-
    position: relative;
    vertical-align: top;
    width: 100%;
-   height: 54px;
+   height: 60px;
    padding: 10px;
    font-size: 22px;
    color: white;
@@ -118,65 +40,61 @@ input {
    border-bottom: 2px solid #D76B60;
    border-radius: 5px;
    cursor: pointer;
-   -webkit-box-shadow: inset 0 -2px #D76B60;
-   box-shadow: inset 0 -2px #D76B60;
+   -webkit-box-shadow: inset 0 -3px #D76B60;
+   box-shadow: inset 0 -3px #FF00CC;
 }
 
+/* 기본버튼 핫핑 눌렀을때 눌리는 모션*/
 .signUpButton:active {
-   top: 1px;
+   top: 2px;
    outline: none;
    -webkit-box-shadow: none;
    box-shadow: none;
 }
-
-:-moz-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
+/* 버튼 수평정렬*/
+ .inGridBtns { 
+	display:inline-block; /* inline-block이어야 자식객체의 내용에 따라 가변적인 크기를 가질 수 있다. */
+	cursor:pointer; 
+	height: 16px /* 버튼의 height의 근사치로 입력해야 버튼에 fit되어 수직 가운데 정렬이 된다. */
+}
+.inGridBtns div{
+	float:left 
 }
 
-::-moz-placeholder {
-   color: #AAAAAA;
-   opacity: 1;
-   font-weight: 300;
-}
-
-::-webkit-input-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
-}
-
-:-ms-input-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
-}
-
-::-moz-focus-inner {
-   border: 0;
-   padding: 0;
-}
 </style>
 </head>
 <header>
 
 </header>
 <body>
-<img src="images/schoolgo.png" style="margin-left: auto; margin-right: auto; display: block;">
-<form class="signUp" id="login" name="loginbutton" action="loginform.jsp" target="popwin">
+<h1>학교가자!</h1>
+<img src="images/schoolgo.png" style="margin-left: auto; margin-right: auto; display: block; width:350px; padding:50px; ">
+<div class="inGridBtns">
+<form class="signUp" id="login" name="loginbutton" >
  <input type="submit" value="로그인" class="signUpButton" onClick="popuplogin()">
 </form>
 <form class="signUp" id="join" name="joinbutton">
  <input type="submit" value="회원가입" class="signUpButton" onClick="popupjoin()">
 </form>
-가져왔따
+</div>
 </body>
 <script>
+	/* 로그인클릭시 loginform.jsp 팝업(가운데) */
 	function popuplogin(){
-		window.open('loginform.jsp','loginbutton','width=400,height=400');
+		 cw=screen.availWidth;     //화면 넓이계산
+		 ch=screen.availHeight;    //화면 높이계산
+		 sw=415;    //띄울 창의 넓이
+		 sh=410;    //띄울 창의 높이
+		 ml=(cw-sw)/2;        //가운데 띄우기위한 창의 x위치
+		 mt=(ch-sh)/2;         //가운데 띄우기위한 창의 y위치
+		window.open('loginform.jsp','loginbutton','width='+sw+',height='+sh+',top='+mt+',left='+ml+',resizable=no,scrollbars=yes');
 		loginbutton.submit();
 	}
+	/* 로그인클릭시 joinform.jsp 팝업 */
 	function popupjoin(){
 		window.open('joinform.jsp','joinbutton','width=800,height=1200');
 		loginbutton.submit();
 	}
+	
 </script>
 </html>

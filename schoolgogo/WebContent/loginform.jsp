@@ -11,6 +11,7 @@ body {
    background: #596778;
 }
 
+/* 전체 폼 */
 .loginUp {
    position: relative;
    margin: 50px auto;
@@ -76,6 +77,7 @@ input {
    box-sizing: border-box;
 }
 
+/* 아이디/비밀번호를입력하세요 input */
 .loginUpInput {
    width: 100%;
    height: 50px;
@@ -100,57 +102,35 @@ input {
    line-height: 48px;
 }
 
+/* 기본버튼핫핑 */
 .loginUpButton {
    position: relative;
    vertical-align: top;
    width: 100%;
-   height: 54px;
-   padding: 0;
+   height: 60px;
+   padding: 10px;
    font-size: 22px;
    color: white;
    text-align: center;
    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-   background: #F0776C;
+   background: #FF66FF;
    border: 0;
    border-bottom: 2px solid #D76B60;
    border-radius: 5px;
    cursor: pointer;
-   -webkit-box-shadow: inset 0 -2px #D76B60;
-   box-shadow: inset 0 -2px #D76B60;
+   -webkit-box-shadow: inset 0 -3px #D76B60;
+   box-shadow: inset 0 -3px #FF00CC;
 }
 
+/* 기본버튼 핫핑 눌렀을때 눌리는 모션*/
 .signUpButton:active {
-   top: 1px;
+   top: 2px;
    outline: none;
    -webkit-box-shadow: none;
    box-shadow: none;
 }
 
-:-moz-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
-}
 
-::-moz-placeholder {
-   color: #AAAAAA;
-   opacity: 1;
-   font-weight: 300;
-}
-
-::-webkit-input-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
-}
-
-:-ms-input-placeholder {
-   color: #AAAAAA;
-   font-weight: 300;
-}
-
-::-moz-focus-inner {
-   border: 0;
-   padding: 0;
-}
 </style>
 </head>
 <body>
