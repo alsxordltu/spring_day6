@@ -90,7 +90,7 @@
 	여자<input type="radio" name="gender" class="joinUpInputRadio" value="여자">
 	<br>이메일<br><input type="text" class="joinUpInput" placeholder="이메일을 입력하세요">
 	<br>전화번호<br><input type="text" class="joinUpInput" placeholder="전화번호를 입력하세요">
-	<br>자기소개<br><textarea cols="80" rows="3" name="introduce" class="joinUpInput"></textarea>
+	<br>자기소계<br><textarea cols="80" rows="3" name="introduce" class="joinUpInput"></textarea>
 </form>
 <form class="signUp" id="join" name="joinbutton">
  <input type="submit" value="회원가입" class="joinUpButton" onClick="loginUp()">
