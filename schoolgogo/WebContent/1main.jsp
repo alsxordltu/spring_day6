@@ -11,15 +11,15 @@ header {
 body {
    font: 13px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
    color: #333333;
-   background: #596778;
+   background: #FFCCFF;
 }
-
-.signUp {
-   margin: 50px auto;  
+/* 흰 버튼 바탕 */
+.signUp { 
+   margin: 40px auto;  
    width: 280px;
    padding: 33px 25px 29px;
    background: #FFFFFF;
-   border-bottom: 1px solid #C4C4C4;
+   border-bottom: 3px solid #C4C4C4;
    border-radius: 7px;
    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -101,14 +101,14 @@ input {
 .lt-ie9 .signUpInput {
    line-height: 48px;
 }
-
+/* 기본버튼핫핑 */
 .signUpButton {
 
    position: relative;
    vertical-align: top;
    width: 100%;
    height: 54px;
-   padding: 0;
+   padding: 10px;
    font-size: 22px;
    color: white;
    text-align: center;
