@@ -80,11 +80,11 @@ $(document).ready(function () {
       <div class="menu_block">
         <nav class="">
           <ul class="sf-menu">
-            <!-- <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">ㅎㅇ(Home)</a> <strong class="hover"></strong></li>
-             --><li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">ㅇㅎㅇ </a><strong class="hover"></strong></li>
-            <li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">ㅀㅇ</a> <strong class="hover"></strong></li>
-            <li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">ㅇㅅㅇㅅ</a> <strong class="hover"></strong></li>
-            <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">ㅇㅂㅇ</a> <strong class="hover"></strong></li>
+            <li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">학교가기</a> <strong class="hover"></strong></li>
+            <li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">루트 등록</a><strong class="hover"></strong></li>
+            <li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">루트 공유</a> <strong class="hover"></strong></li>
+            <li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">마이페이지</a> <strong class="hover"></strong></li>
+            <li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contact Us</a> <strong class="hover"></strong></li>
           </ul>
         </nav>
         <div class="clear"></div>
@@ -124,6 +124,46 @@ $(document).ready(function () {
     </div>
   </div>
 </div> -->
+<div id="page1" class="content">
+<div class="container_12">
+    <div class="grid_12">
+      <div class="slogan">
+        <h3>Only Professional <a onClick="goToByScroll('page3'); return false;" href="#"><span>Services</span></a> for Our <a onClick="goToByScroll('page4'); return false;" href="#"><em>Clients</em></a></h3>
+        <div class="text1"> <a href="#" class="tm_link"> Click here</a> for more info about this free website template created by TemplateMonster.com <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis erat mattis neque facilisis, sit amet ultricies </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/box_img1.jpg" alt="">
+        <div class="text1"><a href="#">Laura Stegner</a></div>
+        senior manager
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/box_img2.jpg" alt="">
+        <div class="text1"><a href="#">Anton Stegner</a></div>
+        manager
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/box_img3.jpg" alt="">
+        <div class="text1"><a href="#">Lisa Haddon </a></div>
+        accounter
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+    <div class="grid_3">
+      <div class="box maxheight"> <img src="images/box_img4.jpg" alt="">
+        <div class="text1"><a href="#">Bradley Grosh</a></div>
+        director
+        <div class="socials1"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
 <div id="page2" class="content">
   <div class="container_12">
     <div class="grid_12">
