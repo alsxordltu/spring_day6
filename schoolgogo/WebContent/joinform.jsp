@@ -53,7 +53,7 @@
 .joinUpButton {
 	display: inline-block;
 	vertical-align: top;
-	width:170px;
+	width: 170px;
 	height: 60px;
 	padding: 10px;
 	font-size: 22px;
@@ -72,7 +72,7 @@
 .loginUp {
 	display: inline-block;
 	vertical-align: top;
-	width:170px;
+	width: 170px;
 	height: 60px;
 	padding: 10px;
 	font-size: 22px;
@@ -87,60 +87,57 @@
 	-webkit-box-shadow: inset 0 -3px #D76B60;
 	box-shadow: inset 0 -3px #FF00CC;
 }
-.checkbutton{
+
+.checkbutton {
 	width: 100px;
-	height: 40px;
+	height: 47px;
 	margin-bottom: 25px;
 	padding: 0 15px 2px;
 	font-size: 17px;
-	background: pink;
+	background: #F7F7F7;
 	border: 2px solid #EBEBEB;
 	border-radius: 4px;
 	-webkit-box-shadow: inset 0 -2px #EBEBEB;
 	box-shadow: inset 0 -2px #EBEBEB;
 }
+
 .buttons {
 	margin: 0 auto;
-	text-align:center;
-	word-spacing: 30px; 
+	text-align: center;
+	word-spacing: 30px;
 }
-
 </style>
 </head>
 <body>
 	<form class="joinUp" id="joinForm" method="post">
 		<h1 class="joinUpTitle">회원가입</h1>
-		아이디<br>
-		<input type="text" class="joinUpInput" placeholder="아이디를입력하세요"
-			autofocus required> <input type="submit" class="checkbutton" value="중복확인">		
-			<br>비밀번호<br>
-			<input type="password" class="joinUpInput" placeholder="비밀번호를 입력하세요"
-			required> 
-						<br>비밀번호 확인<br>
-			<input type="password" class="joinUpInput" placeholder="비밀번호를 한번더입력하세요"
-			required><br>성명<br>
-		<input type="text" class="joinUpInput" placeholder="성명을 입력하세요"
-			name="name"> <br>성별<br>남자<input type="radio"
+		아이디<br> <input type="text" class="joinUpInput"
+			placeholder="아이디를입력하세요" autofocus required> <input
+			type="submit" class="checkbutton" value="중복확인"> <br>비밀번호<br>
+		<input type="password" class="joinUpInput" placeholder="비밀번호를 입력하세요"
+			required> <br>비밀번호 확인<br> <input type="password"
+			class="joinUpInput" placeholder="비밀번호를 한번더입력하세요" required><br>이름 / 닉네임<br>
+		<input type="text" class="joinUpInput" placeholder="이름을 입력하세요"
+			name="name">
+		<input type="text" class="joinUpInput" placeholder="닉네임을 입력하세요"
+			name="name">  <input type="submit" class="checkbutton"
+			value="중복확인"> <!-- <br>성별<br>남자<input type="radio"
 			name="gender" class="joinUpInputRadio" value="남자"> 여자<input
-			type="radio" name="gender" class="joinUpInputRadio" value="여자">
-		<br>이메일<br>
-		<input type="text" class="joinUpInput" placeholder="이메일을 입력하세요">
-		<br>전화번호<br>
-		<input type="text" class="joinUpInput" placeholder="전화번호를 입력하세요">
-		<br>자기소계<br>
-		<textarea cols="80" rows="3" name="introduce" class="joinUpInput"></textarea>
+			type="radio" name="gender" class="joinUpInputRadio" value="여자"> -->
+		<br>Email<br> <input type="text" class="joinUpInput"
+			placeholder="이메일을 입력하세요"> <br>Phone<br> <input
+			type="text" class="joinUpInput" placeholder="전화번호를 입력하세요"> 
 		<div class="buttons">
-		<input type="submit" value="회원가입" class="joinUpButton"
-			onClick="joinUp()">
-		<input type="submit" value="돌아가기" class="joinUpButton"
-			onClick="window.close()">
+			<input type="submit" value="회원가입" class="joinUpButton"
+				onClick="joinUp()"> <input type="submit" value="돌아가기"
+				class="joinUpButton" onClick="window.close()">
 		</div>
 	</form>
 
 </body>
 <script>
 	function joinUp() {
-		opener.location.href = 'index.jsp';
+		opener.location.href = 'tutorial.jsp';
 		window.close();
 	}
 </script>

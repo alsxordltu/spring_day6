@@ -93,37 +93,6 @@ $(document).ready(function () {
     <div class="clear"></div>
   </div>
 </header>
-<!-- <div id="page1" class="content">
-  <div class="container_12">
-    <div class="grid_12">
-      <div class="slider_wrapper">
-        <ul class="items">
-          <li> <img src="images/spacer.gif" alt="">
-            <div class="caption banner">
-              <h2>헤헤헤헤헤</h2>
-            </div>
-          </li>
-          <li> <img src="images/spacer.gif" alt="">
-            <div class="caption banner">
-              <h2>ㄴㅇㄹㄴㅇㄹㄴㅇㄹ</h2>
-            </div>
-          </li>
-          <li> <img src="images/spacer.gif" alt="">
-            <div class="caption banner">
-              <h2>ㄴㅇㄹㄴㅇㄹ</h2>
-            </div>
-          </li>
-          <li> <img src="images/spacer.gif" alt="">
-            <div class="caption banner">
-              <h2>ㄴㅇㄹ</h2>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="socials"> <a href="#"></a> <a href="#"></a> <a href="#"></a> <a href="#"></a> </div>
-    </div>
-  </div>
-</div> -->
 <div id="page1" class="content">
 <div class="container_12">
     <div class="grid_12">
