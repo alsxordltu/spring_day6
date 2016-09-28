@@ -88,9 +88,9 @@
 					<ul class="items">
 						<li><img src="images/spacer.gif" alt="">
 							<div class="caption banner">
-								<img src="images/tutorial1.png"
-		style="margin-left: auto; margin-right: auto; display: block; width: 350px; padding: 50px;">
-							</div></li>
+								<img src="images/schoolgo.png"
+		style="margin-left: auto; margin-right: auto; display: block; width: 800px; height:440px; padding: 50px;">
+							sdfsd</div></li>
 						<li><img src="images/spacer.gif" alt="">
 							<div class="caption banner">
 								<h3>루트명과 교통수단, 전철역을 입력하고 등록하세요!</h3>
